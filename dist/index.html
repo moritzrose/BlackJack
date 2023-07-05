@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"></link>
+    <title>Black Jack</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Black Jack</h1>
+        <div id="dealersHand">
+            <h2>Dealer:</h2>
+            <img class="dealersCard" src="" alt="">
+            <img class="dealersCard" src="" alt="">
+            <img class="dealersCard" id="dealersHiddenCard" style ="display:none" src="" alt="">
+        </div> 
+        <div id = playersHand>   
+            <h2>Player:</h2>            
+            <img class="playersCard" src="" alt="">
+            <img class="playersCard" src="" alt="">
+        </div>    
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <button id="newGame">New Game</button>
+        
+        <p>Money: <span id="playersMoney"></span> €</p>
+        <input id="betInput"></input> Your bet: <span id="bet">0</span> €
+    </div>
+
+    <dialog id="popUpWindow">
+        <p id="instructions"></p>  
+    </dialog>
+
+
+<script src="./main.js"></script>
+</body>
+</html>
